@@ -1,7 +1,7 @@
 {
   "name": "word-kodyfire",
   "version": "0.0.2",
-  "description": "Generate x with word kodyfire",
+  "description": "Generate Word document based on template with word kodyfire",
   "main": "build/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
