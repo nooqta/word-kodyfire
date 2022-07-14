@@ -65,4 +65,4 @@ Copyright © 2022 [Anis Marrouchi](https://github.com/anis-marrouchi).
 This project is [MIT](https://github.com/nooqta/kodyfire/blob/main/LICENSE) licensed.
 
 ***
-_This README was generated with ❤️ by [word-kodyfire](https://github.com/nooqta/word-kodyfire)_
+_This README was generated with ❤️ by [readme-kodyfire](https://github.com/nooqta/readme-kodyfire)_
