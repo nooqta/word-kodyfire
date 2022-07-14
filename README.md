@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/nooqta/kodyfire/blob/main/LICENSE)
 [![Twitter: anis\_marrouchi](https://img.shields.io/twitter/follow/anis\_marrouchi.svg?style=social)](https://twitter.com/anis\_marrouchi)
 
-> Generate readme.md for your project using Kodyfire cli
+> Generate a MS Word document based on a template document using Kodyfire cli
 
 ### 🏠 [Homepage](https://github.com/nooqta/kodyfire)
 
