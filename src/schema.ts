@@ -6,7 +6,7 @@ export const concept = {
       type: 'string',
       enum: ['default.docx'],
     },
-    outputDir: { type: 'string' },
+    outputDir: { type: 'string' }
   },
 };
 

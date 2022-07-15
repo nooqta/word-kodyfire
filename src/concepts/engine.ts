@@ -48,14 +48,8 @@ export class Engine extends BaseEngine {
       linebreaks: true,
     });
 
-    // Render the document (Replace {first_name} by John, {last_name} by Doe, ...)
-    this.builder.render({
-      ...data,
-      first_name: "John",
-      last_name: "Doe",
-      phone: "0652455478",
-      description: "New Website",
-  });
+    // Render the document
+    this.builder.render(data);
 
     return this.builder.getZip().generate({
       type: "nodebuffer",
