@@ -1,6 +1,6 @@
 {
   "name": "word-kodyfire",
-  "version": "0.0.6",
+ "version": "0.0.9",
   "description": "Generate Word document based on template with word kodyfire",
   "main": "build/index.js",
   "scripts": {
