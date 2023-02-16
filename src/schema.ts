@@ -4,7 +4,6 @@ export const concept = {
     name: { type: 'string' },
     template: {
       type: 'string',
-      enum: ['default.docx'],
     },
     outputDir: { type: 'string' }
   },

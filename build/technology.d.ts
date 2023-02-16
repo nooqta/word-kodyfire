@@ -15,4 +15,5 @@ export declare class Technology extends BaseTechnology {
         }[];
     });
     initConcepts(): void;
+    updateTemplatesPath(params: any): void;
 }

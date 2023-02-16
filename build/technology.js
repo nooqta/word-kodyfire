@@ -24,6 +24,8 @@ const basic_kodyfire_1 = require("basic-kodyfire");
 const classes = __importStar(require("."));
 const assets = __importStar(require("./assets.json"));
 const kodyfire_core_1 = require("kodyfire-core");
+const path_1 = require("path");
+const fs = require('fs');
 class Technology extends basic_kodyfire_1.Technology {
     constructor(params, _assets = assets) {
         try {
@@ -39,7 +41,23 @@ class Technology extends basic_kodyfire_1.Technology {
     initConcepts() {
         // add dynamic property for technology
         for (const concept of this.assets.concepts) {
-            this.concepts.set(concept.name, new classes[(0, kodyfire_core_1.capitalize)(concept.name)](concept, this));
+            if (typeof classes[(0, kodyfire_core_1.capitalize)(concept.name)] !== 'undefined') {
+                this.concepts.set(concept.name, new classes[(0, kodyfire_core_1.capitalize)(concept.name)](concept, this));
+            }
+            else {
+                this.concepts.set(concept.name, new basic_kodyfire_1.Concept(concept, this));
+            }
+        }
+    }
+    updateTemplatesPath(params) {
+        const templatesPath = (0, path_1.join)(process.cwd(), '.kody', params.name);
+        // we check if the path exists
+        if (fs.existsSync(templatesPath)) {
+            this.params.templatesPath = templatesPath;
+            // We overwrite the assets property if assets.json exists in the .kody folder
+            if (fs.existsSync((0, path_1.join)(templatesPath, 'assets.json'))) {
+                this.assets = require((0, path_1.join)(templatesPath, 'assets.json'));
+            }
         }
     }
 }
